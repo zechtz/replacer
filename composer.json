@@ -1,0 +1,21 @@
+{
+    "name": "mtabe/replacer",
+    "description": "\"replaces query placeholders with params variables\"",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Zachariah Ngonyani",
+            "email": "zachariahn@gmail.com"
+            "homepage": "http://watabelabs.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "php": ">=5.3.0"
+    },
+    "autoload": {
+        "psr-0": {
+            "Mtabe": "src/"
+        }
+    }
+}
