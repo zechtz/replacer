@@ -4,7 +4,6 @@ namespace Mtabe;
 
 class Replacer
 {
-
     const MESSAGE_ERROR_DESTRUCTIVE_WORDS = "SQL QUERY CONTAINS THE FOLLOWING DESCTRUCTIVE WORDS";
     const MESSAGE_ERROR_UNREPLACED_PARAMS = "THE FOLLOWING PARAMS DON'T HAVE REPLACEMENTS";
     /**
@@ -26,10 +25,10 @@ class Replacer
         // Matches any value inside {} and saves in $matches array
         // preg_match returns 1 if there's a match or 0 if no match
         // then saves the match in the $matches array
-
-        // remove new line characters and tabs and all two or more spaces with single space
-
-        // check if query contains either drop, update, delete, truncate and return error message if it does
+        // remove new line characters and tabs and all
+        // two or more spaces with single space
+        // check if query contains either drop, update, delete,
+        // truncate and return error message if it does
         $query = self::queryHasDestructiveWords($query)? self::queryHasDestructiveWords($query) : $query;
 
         $result = preg_replace_callback(
