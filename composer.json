@@ -4,9 +4,9 @@
     "license": "MIT",
     "authors": [
         {
-            "name": "Zachariah Ngonyani",
-            "email": "zachariahn@gmail.com"
-            "homepage": "http://watabelabs.com"
+            "name"     : "Zachariah Ngonyani",
+            "email"    : "zachariahn@gmail.com",
+            "homepage" : "http://watabelabs.com"
         }
     ],
     "minimum-stability": "dev",
