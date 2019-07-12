@@ -54,9 +54,7 @@ class Replacer
     private  static function allParamsHaveNotBeenReplaced($query)
     {
         if (preg_match_all('/(\#P\{.*?\})/', $query, $matches)) {
-
             $unReplacedPlaceholders = array_pop($matches);
-
             throw new \Exception(
                 MESSAGE_ERROR_UNREPLACED_PARAMS. " \n".join("\r\n",
                 $unReplacedPlaceholders)
