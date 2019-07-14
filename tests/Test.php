@@ -5,7 +5,6 @@ require_once __DIR__ . '/../vendor/autoload.php';
 
 use Mtabe\Replacer;
 
-
 $params = [
   'name'       => 'jonh snow',
   'start_date' => '12-01-2019',
